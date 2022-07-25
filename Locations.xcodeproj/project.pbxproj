@@ -16,6 +16,8 @@
 		69CC1433288995D9003AD17A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CC1431288995D9003AD17A /* LaunchScreen.storyboard */; };
 		69CC143B2889EA61003AD17A /* LocationDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC143A2889EA61003AD17A /* LocationDetailsViewController.swift */; };
 		69CC1442288EED9D003AD17A /* CategoryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC1441288EED9D003AD17A /* CategoryPickerViewController.swift */; };
+		69CC1444288EFB02003AD17A /* HudView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC1443288EFB02003AD17A /* HudView.swift */; };
+		69CC1447288F1A10003AD17A /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC1446288F1A10003AD17A /* Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		69CC1434288995D9003AD17A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69CC143A2889EA61003AD17A /* LocationDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailsViewController.swift; sourceTree = "<group>"; };
 		69CC1441288EED9D003AD17A /* CategoryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPickerViewController.swift; sourceTree = "<group>"; };
+		69CC1443288EFB02003AD17A /* HudView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HudView.swift; sourceTree = "<group>"; };
+		69CC1446288F1A10003AD17A /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		69CC1422288995D5003AD17A /* Locations */ = {
 			isa = PBXGroup;
 			children = (
+				69CC1445288F19F0003AD17A /* Helpers */,
 				69CC1440288EE2D5003AD17A /* View */,
 				69CC1423288995D5003AD17A /* AppDelegate.swift */,
 				69CC1425288995D5003AD17A /* SceneDelegate.swift */,
@@ -96,8 +101,17 @@
 		69CC1440288EE2D5003AD17A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				69CC1443288EFB02003AD17A /* HudView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		69CC1445288F19F0003AD17A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				69CC1446288F1A10003AD17A /* Functions.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +188,10 @@
 				69CC1442288EED9D003AD17A /* CategoryPickerViewController.swift in Sources */,
 				69CC1428288995D5003AD17A /* CurrentLocationViewController.swift in Sources */,
 				69CC1424288995D5003AD17A /* AppDelegate.swift in Sources */,
+				69CC1447288F1A10003AD17A /* Functions.swift in Sources */,
 				69CC142E288995D5003AD17A /* Locations.xcdatamodeld in Sources */,
 				69CC1426288995D5003AD17A /* SceneDelegate.swift in Sources */,
+				69CC1444288EFB02003AD17A /* HudView.swift in Sources */,
 				69CC143B2889EA61003AD17A /* LocationDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
