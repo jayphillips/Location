@@ -382,6 +382,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="zgi-Id-kXb" kind="relationship" relationship="viewControllers" id="Pno-U6-Qjs"/>
+                        <segue destination="lOY-DI-zJ1" kind="relationship" relationship="viewControllers" id="LUz-jt-Hhh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="68q-0Z-DZu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -407,7 +408,86 @@
             </objects>
             <point key="canvasLocation" x="1077.5999999999999" y="95.802098950524751"/>
         </scene>
+        <!--Locations-->
+        <scene sceneID="g5x-ql-Nwd">
+            <objects>
+                <tableViewController id="xWm-pX-fT1" customClass="LocationsViewController" customModule="Locations" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="08t-yh-3Uq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationCell" rowHeight="65" id="Ogv-sT-Dzb" customClass="LocationCell" customModule="Locations" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="375" height="65"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ogv-sT-Dzb" id="jf8-dY-WI0">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="65"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vcz-yJ-H74">
+                                            <rect key="frame" x="16" y="11" width="343" height="43"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDY-cy-XnQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mo3-pt-KZq">
+                                                    <rect key="frame" x="0.0" y="26" width="343" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.50331125827814571" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="vcz-yJ-H74" secondAttribute="trailing" id="6PF-Nm-pfH"/>
+                                        <constraint firstItem="vcz-yJ-H74" firstAttribute="leading" secondItem="jf8-dY-WI0" secondAttribute="leadingMargin" id="dvp-PX-tcK"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="vcz-yJ-H74" secondAttribute="bottom" id="kur-EG-IXq"/>
+                                        <constraint firstItem="vcz-yJ-H74" firstAttribute="top" secondItem="jf8-dY-WI0" secondAttribute="topMargin" id="omB-Bu-cpf"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="addressLabel" destination="mo3-pt-KZq" id="npZ-r9-Ikl"/>
+                                    <outlet property="descriptionLabel" destination="MDY-cy-XnQ" id="3XX-9o-Yl4"/>
+                                    <segue destination="64N-RP-A72" kind="show" identifier="EditLocation" id="XDl-TL-xMF"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="xWm-pX-fT1" id="9mV-30-34h"/>
+                            <outlet property="delegate" destination="xWm-pX-fT1" id="paS-ve-aUa"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Locations" id="2LB-ka-Glj"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JA9-br-5Kx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.5999999999999" y="776.76161919040487"/>
+        </scene>
+        <!--Locations-->
+        <scene sceneID="bHW-qE-Am2">
+            <objects>
+                <navigationController title="Locations" id="lOY-DI-zJ1" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Locations" id="n74-gN-rKA"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="CTc-g0-uzM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xWm-pX-fT1" kind="relationship" relationship="rootViewController" id="oOd-fz-fhG"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NQQ-sI-EYx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1078" y="777"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="XDl-TL-xMF"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

@@ -20,6 +20,8 @@
 		69CC1447288F1A10003AD17A /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC1446288F1A10003AD17A /* Functions.swift */; };
 		69CC144A288F26D8003AD17A /* Location+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC1448288F26D8003AD17A /* Location+CoreDataClass.swift */; };
 		69CC144B288F26D8003AD17A /* Location+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC1449288F26D8003AD17A /* Location+CoreDataProperties.swift */; };
+		69CC144D288F3B96003AD17A /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC144C288F3B96003AD17A /* LocationsViewController.swift */; };
+		69CC144F289022F8003AD17A /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CC144E289022F8003AD17A /* LocationCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		69CC1446288F1A10003AD17A /* Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
 		69CC1448288F26D8003AD17A /* Location+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataClass.swift"; sourceTree = "<group>"; };
 		69CC1449288F26D8003AD17A /* Location+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Location+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69CC144C288F3B96003AD17A /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		69CC144E289022F8003AD17A /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +96,7 @@
 				69CC1427288995D5003AD17A /* CurrentLocationViewController.swift */,
 				69CC143A2889EA61003AD17A /* LocationDetailsViewController.swift */,
 				69CC1441288EED9D003AD17A /* CategoryPickerViewController.swift */,
+				69CC144C288F3B96003AD17A /* LocationsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -108,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				69CC1443288EFB02003AD17A /* HudView.swift */,
+				69CC144E289022F8003AD17A /* LocationCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -195,7 +201,9 @@
 				69CC1428288995D5003AD17A /* CurrentLocationViewController.swift in Sources */,
 				69CC1424288995D5003AD17A /* AppDelegate.swift in Sources */,
 				69CC1447288F1A10003AD17A /* Functions.swift in Sources */,
+				69CC144D288F3B96003AD17A /* LocationsViewController.swift in Sources */,
 				69CC144B288F26D8003AD17A /* Location+CoreDataProperties.swift in Sources */,
+				69CC144F289022F8003AD17A /* LocationCell.swift in Sources */,
 				69CC142E288995D5003AD17A /* Locations.xcdatamodeld in Sources */,
 				69CC1426288995D5003AD17A /* SceneDelegate.swift in Sources */,
 				69CC144A288F26D8003AD17A /* Location+CoreDataClass.swift in Sources */,
