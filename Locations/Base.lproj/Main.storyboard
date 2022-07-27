@@ -439,33 +439,43 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="vcz-yJ-H74">
-                                            <rect key="frame" x="16" y="11" width="343" height="43"/>
+                                            <rect key="frame" x="80" y="11" width="279" height="43"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDY-cy-XnQ">
-                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="21"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="279" height="21"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mo3-pt-KZq">
-                                                    <rect key="frame" x="0.0" y="26" width="343" height="17"/>
+                                                    <rect key="frame" x="0.0" y="26" width="279" height="17"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.50331125827814571" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4sQ-Ip-mGn">
+                                            <rect key="frame" x="16" y="6" width="56" height="56"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="56" id="Ay0-1h-HyN"/>
+                                                <constraint firstAttribute="height" constant="56" id="g9i-Y4-sKo"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstAttribute="trailingMargin" secondItem="vcz-yJ-H74" secondAttribute="trailing" id="6PF-Nm-pfH"/>
-                                        <constraint firstItem="vcz-yJ-H74" firstAttribute="leading" secondItem="jf8-dY-WI0" secondAttribute="leadingMargin" id="dvp-PX-tcK"/>
+                                        <constraint firstItem="4sQ-Ip-mGn" firstAttribute="leading" secondItem="jf8-dY-WI0" secondAttribute="leading" constant="16" id="g3i-sE-Rij"/>
                                         <constraint firstAttribute="bottomMargin" secondItem="vcz-yJ-H74" secondAttribute="bottom" id="kur-EG-IXq"/>
+                                        <constraint firstItem="vcz-yJ-H74" firstAttribute="leading" secondItem="4sQ-Ip-mGn" secondAttribute="trailing" constant="8" id="o2g-eB-0Eq"/>
                                         <constraint firstItem="vcz-yJ-H74" firstAttribute="top" secondItem="jf8-dY-WI0" secondAttribute="topMargin" id="omB-Bu-cpf"/>
+                                        <constraint firstItem="4sQ-Ip-mGn" firstAttribute="top" secondItem="jf8-dY-WI0" secondAttribute="top" constant="6" id="zUV-eR-1ox"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="addressLabel" destination="mo3-pt-KZq" id="npZ-r9-Ikl"/>
                                     <outlet property="descriptionLabel" destination="MDY-cy-XnQ" id="3XX-9o-Yl4"/>
+                                    <outlet property="photoImageView" destination="4sQ-Ip-mGn" id="C0N-mZ-ppb"/>
                                     <segue destination="64N-RP-A72" kind="show" identifier="EditLocation" id="XDl-TL-xMF"/>
                                 </connections>
                             </tableViewCell>
@@ -561,7 +571,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="S3N-hf-9Br"/>
+        <segue reference="XDl-TL-xMF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="labelColor">
